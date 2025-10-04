@@ -3,15 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <title>My Website</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Banner Section */
+      .banner {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f2f2;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .banner-text {
+        position: absolute;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px 40px;
+        border-radius: 10px;
+      }
+    </style>
+
     <script>
       if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-        window.location.href = "https://paleturquoise-wallaby-105080.hostingersite.com/";
+        window.location.href =
+          "https://papayawhip-chamois-543028.hostingersite.com/";
       }
     </script>
   </head>
+
   <body>
+    <!-- Banner Section -->
+    <section class="banner">
+      <img src="https://via.placeholder.com/1200x400" alt="Banner Image" />
+      <div class="banner-text">Welcome to My Website</div>
+    </section>
+
     <div id="root"></div>
   </body>
 </html>
-
-
