@@ -9,33 +9,29 @@
         font-family: Arial, sans-serif;
       }
 
-      /* Banner Section */
       .banner {
         width: 100%;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f2f2f2;
-        background-size: cover;
-        background-position: center;
         position: relative;
+        overflow: hidden;
       }
 
       .banner img {
+        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
       }
 
       .banner-text {
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
-        text-align: center;
         font-size: 2rem;
+        text-align: center;
         background: rgba(0, 0, 0, 0.4);
-        padding: 20px 40px;
-        border-radius: 10px;
+        padding: 15px 30px;
+        border-radius: 8px;
       }
     </style>
 
@@ -50,11 +46,14 @@
   <body>
     <!-- Banner Section -->
     <section class="banner">
-      <img src="https://papayawhip-chamois-543028.hostingersite.com/assets/images/B-1.jpg" />
+      <img
+        class="d-block w-100"
+        src="<?php echo ROOT_URL; ?>assets/images/B-1.jpg"
+        alt="First slide"
+      />
       <div class="banner-text">Welcome to My Website</div>
     </section>
 
     <div id="root"></div>
   </body>
 </html>
-
